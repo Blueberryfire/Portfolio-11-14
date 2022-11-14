@@ -1,0 +1,89 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 24px 35px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 100px; /* Add a top margin to avoid content overlay */
+  }
+
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h1.center{
+      text-align: center;
+    }
+    p.center{
+        text-align: center;
+    }
+
+    .navbar span{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 24px 35px;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+        background-color: rgb(79, 95, 90);
+    }
+    #AboutMe{
+        float: right;
+        background-color: rgb(108, 108, 150);
+    }
+    .underline{
+        text-decoration:underline;
+    }
+    .bottumLeft{
+      bottom: 0;
+      left:0;
+      position: absolute;
+      padding: 10px 15px;
+    }
+
+    .flextainer{
+      display: flex;
+      direction: horizontal;
+    }
+    .flextainer p{
+      margin-left: auto;
+      margin-right: auto;
+      display: block
+  }
+  .flextainerDescription{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+
+  @media screen and (max-width: 768px){
+    .flextainer{
+      display: block;
+      direction: vertical;
+    }
+  }

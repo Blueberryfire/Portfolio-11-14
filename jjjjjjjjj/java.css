@@ -1,0 +1,84 @@
+h1{
+    margin-top: 100px;
+    font-size: 80px;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+}
+img{
+    width: 55%;  
+}
+body{
+    background-color: grey;
+}
+p{
+    font-size: 35px;
+}
+.container{
+    padding-left: 25px;
+    width: 40%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}   
+.container img{
+    width: 95%;
+    height: 95%;  
+}
+#StartBoard{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #fourMoveMate{
+    width: 97.5%;
+    height: 97.5%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #castle{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #pawnPromotion{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #checkMate{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  #restriction{
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+
+#phraseFinderSpacer{
+  padding-top: 70px;
+}
+@media screen and (max-width: 768px){
+ body{
+ }
+ .container{
+  margin-left: auto;
+  margin-right: auto;
+ }
+ video{
+  width: 70%;
+  height: 70%;
+ }
+
+}
